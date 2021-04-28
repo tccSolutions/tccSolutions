@@ -29,7 +29,7 @@ class GridMenu extends React.Component{
     render(){
        const {onRouteChange} = this.props;
         return(
-            <div className='grid-menu center'>
+            <div className='grid-menu'>
                
                 <div className=''>
                     {/* Welcome Button */}

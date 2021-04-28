@@ -25,11 +25,10 @@
 /*Greeting Component*/
 .greeting{  
   display:flex;
-  align-items: center;
-  justify-content:center;
+  align-items:center;
   padding: 50px 15px;
   position: absolute;
-  left: 25vw;  
+  left: 35vw;  
   top: 0em;
   bottom: 0em;
   overflow: auto; 
@@ -95,13 +94,14 @@
 
  
 .grid-menu{ 
-  display:flex;  
+  display:flex;
+  flex-direction:column;  
   position:absolute;
   align-items: center;
-  top:20rem;
+  top:5rem;
   bottom:0;  
-  left:5vw;
-  width: 100vw;
+  left:0vw;
+  width: 25vw;
   height: 20em;
 }
 
@@ -200,7 +200,8 @@
     font-size: 1.5em;     
   }
    .grid-menu{   
-    display:flex;  
+    display:flex;
+    flex-direction:row;  
     position:fixed;
     width: 100%;  
     padding:.25em;
