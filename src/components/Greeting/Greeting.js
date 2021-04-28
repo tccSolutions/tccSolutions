@@ -14,7 +14,7 @@ class Greeting extends React.Component{
                 <div className='dcs_2'> 
                                     Thank you for visiting TCCS.tech. We offer a 
                                     variety of services ranging from pc repair to web development.
-                                    Please use<span className='link '> Contact Us</span> link if you would like a quote or have a 
+                                    Please use the <span className='link '> Contact Us</span> link if you would like a quote or have a 
                                     question.
                 </div>
             </div>
