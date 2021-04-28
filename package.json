@@ -2,7 +2,7 @@
   "name": "tccs.tech",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tccsolutions.github.io/tccsolutions.github.io",
+  "homepage": "https://tccsolutions.github.io/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.6",
