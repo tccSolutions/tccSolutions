@@ -1,15 +1,30 @@
 import React from 'react'
+import ac from '../../data/images/MDCS.jpg'
 
 class MyWork extends React.Component {
     render() {
         const { onRouteChange } = this.props;
         return (
             <div className='work'>
-                <div className='fs-1 mt-5 fw-bold'>
+                <div className='fs-1 mt-5 fw-bold d-flex justify-content-center'>
                     PC Repair and Builds
                     </div>
-                <div className='fs-1 mt-5 fw-bold'>
-                    Python Projects
+                <div className='fs-1 mt-5 fw-bold justify-content-center'>
+                    <h2>Python Projects</h2>
+                    <div className='d-flex justify-content-center mt-5' >
+                    <div className='w-50 d-flex justify-content-center'>
+                        <div className='justify-content-center'>
+                        <img src={ac} alt='' width='300px'/>
+                        </div>
+                        <div className='w-50 d-flex justify-content-center mt-5'>
+                            <h4>This program was designed to help automate the paperwork involed in classifying animals. The user simply inputs the required and the program inserts
+                            the information into the required fields.
+                        </h4>
+                        </div>
+                        </div>
+                       
+                        
+                    </div>
                     </div>
                 <div className='fs-1 mt-5 fw-bold justify-content-center'>
                     <h2>Web Projects</h2>
@@ -25,7 +40,7 @@ class MyWork extends React.Component {
                         <ul className='list-unstyled'>
                             <li className='border mt-3'>
                                 <div className='d-flex justify-content-center'>
-                                    <a href='https://dmobley0608.github.io/familyhub'><p className='pointer'>www.hpHangout.com</p></a>
+                                    <a href='https://dmobley0608.github.io/familyhub'><p className='pointer' style={{color:"white"}}>www.hpHangout.com</p></a>
                                 </div>
                                 
                                 <div className='d-flex justify-content-center mt-0'>
