@@ -7,7 +7,7 @@ class Background extends React.Component {
     render(){
         return (            
             // <img className='wallpaper pushback' alt='wallpaper' src={Wallpaper} />
-            <div className='wallpaper bg'></div>
+            <div className='wallpaper bg pushback'></div>
         );
     }
     
