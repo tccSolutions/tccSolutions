@@ -6,6 +6,7 @@ import GridMenu from './components/GridMenu/GridMenu';
 import ContactUs from './components/ContactUs/ContactUs';
 import './App.css';
 import MyWork from './components/MyWork/MyWork';
+import Nav from './components/Nav/Nav'
 
 
 
@@ -29,18 +30,23 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <Background />
-        <GridMenu onRouteChange={this.onRouteChange} />
-       
-        {route === 'home'
-        ? <Greeting />
+        <Background />     
          
-        :route === "contactUs"
-        ? <ContactUs onRouteChange={this.onRouteChange} route={route} />          
+        {route === "contactUs"
+        ?<div>
+            <Nav onRouteChange={this.onRouteChange} route={route}/>
+            <ContactUs onRouteChange={this.onRouteChange} route={route} />          
+          </div>
         
         :route === "work"
-          ? <MyWork onRouteChange={this.onRouteChange} route={route} />
-          : <div></div>
+          ? <div>
+            <Nav onRouteChange={this.onRouteChange} route={route}/>
+            <MyWork onRouteChange={this.onRouteChange} route={route} />
+            </div>
+          : <div>
+              <GridMenu onRouteChange={this.onRouteChange} />
+              <Greeting/>
+          </div>
         }
       </div>
     );
