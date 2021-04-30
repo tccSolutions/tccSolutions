@@ -66,7 +66,8 @@ class ContactUs extends React.Component{
                  <div className="contact-form" >
                      <div>
                      <div className='mt-3' style={{height:'5em', width:'35em'}}>
-                        <h1>Contact Us</h1> 
+                        <h1>Contact Us</h1>
+                        <p>Please use the form below to request a quote or ask a question.</p> 
                     </div>
                         <div className=''style={{ display:'flex',justifyContent:'center',height:'2em', width:'35em', marginTop:'2em'}}>
                             <div className='mx-2 w-50'>
