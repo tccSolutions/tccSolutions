@@ -5,7 +5,7 @@ import underline from '../../data/images/underline.png';
 class Greeting extends React.Component{
     render(){
         return(
-            <div className='greeting'>
+            <div className='d-flex greeting start-50 transform-middle'>
                 <div>
                 <div className='dcs'>
                     <h1 style = {{marginBottom:'0'}}>Tim's Custom Computer Solutions</h1>                   

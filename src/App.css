@@ -36,19 +36,16 @@
 }
 
 /*Greeting Component*/
-.greeting{  
-  display:flex;
+.greeting{ 
+  margin-top: 25vh;
   justify-content: center;
   align-items:center;
-  padding: 50px 15px;
-  position: relative;
-  left:25%;
-  top:15em;      
+  padding: 50px 15px; 
+       
 }
 
 .dcs{ 
-  justify-content:center;
-  width: 60%;
+  justify-content:center; 
   text-shadow: rgb(0, 0, 0) 5px 5px 5px; 
   color: rgb(255, 255, 255); 
   line-height: 2em;
@@ -57,8 +54,8 @@
   font-family:'Gayathri', sans-serif;
 }
 
-.dcs_2{ 
-  width: 60%;
+.dcs_2{  
+  width: 55vw;
   margin-top: 1.5em;
   text-shadow: rgb(0, 0, 0) 5px 5px 5px; 
   color: rgb(255, 255, 255); 
@@ -111,7 +108,7 @@
   align-items: center;
   top:5rem;
   bottom:0;  
-  left:0vw;
+  left:-5vw;
   width: 25vw;
   height: 20em;
 }

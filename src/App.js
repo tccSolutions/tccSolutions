@@ -1,54 +1,34 @@
 import React from 'react';
 import Background from './components/Background/Background';
-import Greeting from './components/Greeting/Greeting'
-
+import Greeting from './components/Greeting/Greeting';
 import GridMenu from './components/GridMenu/GridMenu';
+import Nav from './components/Nav/Nav';
 import ContactUs from './components/ContactUs/ContactUs';
 import './App.css';
 import MyWork from './components/MyWork/MyWork';
-import Nav from './components/Nav/Nav'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route  
+} from "react-router-dom";
 
 
 
 class App extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      route: 'home'
-    }
-  }
-
-  onRouteChange = (route) => {
-    this.setState({
-      route: route
-    });
-  }
 
   render() {
-    const { route } = this.state;
-
-
     return (
-      <div className="App">
-        <Background />     
-         
-        {route === "contactUs"
-        ?<div>
-            <Nav onRouteChange={this.onRouteChange} route={route}/>
-            <ContactUs onRouteChange={this.onRouteChange} route={route} />          
-          </div>
-        
-        :route === "work"
-          ? <div>
-            <Nav onRouteChange={this.onRouteChange} route={route}/>
-            <MyWork onRouteChange={this.onRouteChange} route={route} />
-            </div>
-          : <div>
-              <GridMenu onRouteChange={this.onRouteChange} />
-              <Greeting/>
-          </div>
-        }
+      <Router>
+      <div className="App"> 
+        <Nav/>              
+        <Background/>
+        <Switch>
+          <Route exact path='/'> <Greeting/> </Route>
+          <Route  path='/work' ><MyWork/></Route>
+          <Route  path='/contact' ><ContactUs/></Route>
+        </Switch>
       </div>
+    </Router>
     );
   }
 }
