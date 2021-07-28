@@ -52,6 +52,7 @@
   font-size: 2.8rem;
   letter-spacing: .25em;
   font-family:'Gayathri', sans-serif;
+  margin-top: 25vh;
 }
 
 .dcs_2{  
@@ -189,6 +190,19 @@
   color:white; 
 }
 
+/*Review*/
+.review{
+  border-radius: 1em;
+  height: 65vh;
+  overflow-y: hidden;
+  overflow-y: scroll;
+  width: 65vw;  
+}
+
+.reviewInput{
+  width:50vw;
+}
+
 
 /*Mobile devices*/
 @media only screen and (max-width:600px){
@@ -199,7 +213,7 @@
     position:relative;
     top: 0;
     left:0;
-    transform: scale(.75);
+    transform: scale(.65);
      
   }
    .dcs{
@@ -244,18 +258,22 @@
     position:fixed;
     left: 33vw;
     top:10vh;
-    transform: scale(.85)     
-    
+    transform: scale(.75);
+    padding: 2em;   
   }  
-}
-
-/*Review*/
+  /*Review*/
 .review{
   border-radius: 1em;
-  height: 65vh;
+  height: 35vh;
   overflow-y: hidden;
   overflow-y: scroll;
-  
+  width: 120vw;  
 }
+.reviewInput{
+  width:75vw;
+}
+}
+
+
 
 

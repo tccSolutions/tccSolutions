@@ -42,7 +42,7 @@ function Review() {
 
              {/* customer reviews */}
              <div className="d-flex justify-content-center">
-            <div className='border border-4 border-light py-5 d-flex justify-content-center w-50 review'>
+            <div className='border border-4 border-light py-5 d-flex justify-content-center review'>
             <div className="justify-content-center">
                
                 {data.map((person) => (
@@ -60,11 +60,11 @@ function Review() {
 
                     {/* add a review pane */}
             <div className="d-flex flex-row mb-3  justify-content-center mt-5">
-                <input type="text" className="form-control w-25" id="name" placeholder="Enter your name" />
+                <input type="text" className="form-control reviewInput" id="name" placeholder="Enter your name" />
             </div>
 
             <div className="d-flex flex-row mb-3 justify-content-center">
-                <textarea className="form-control w-25" id="comment" placeholder="Enter your comment" rows="5"></textarea>
+                <textarea className="form-control reviewInput" id="comment" placeholder="Enter your comment" rows="5"></textarea>
             </div>
 
             <div className="d-flex flex-row mb-3 justify-content-center">
