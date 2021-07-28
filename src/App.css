@@ -246,7 +246,16 @@
     top:10vh;
     transform: scale(.85)     
     
-  }
+  }  
+}
+
+/*Review*/
+.review{
+  border-radius: 1em;
+  height: 65vh;
+  overflow-y: hidden;
+  overflow-y: scroll;
+  
 }
 
 
