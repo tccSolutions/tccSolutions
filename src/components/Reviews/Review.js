@@ -46,7 +46,7 @@ function Review() {
             <div className="justify-content-center">
                
                 {data.map((person) => (
-                    <div class="card d-flex flex-row justify-content-center mt-5" style={{ width: "35vw" }}>
+                    <div class="card d-flex flex-row justify-content-center mt-5 mx-3">
                         <div class="card-body">
                             <h5 class="card-title">{person.name}</h5>
                             <h6 class="card-subtitle mb-2 text-muted">{person.date}</h6>
