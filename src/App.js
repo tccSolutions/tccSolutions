@@ -1,13 +1,12 @@
 import React from 'react';
 import Background from './components/Background/Background';
 import Greeting from './components/Greeting/Greeting';
-import GridMenu from './components/GridMenu/GridMenu';
 import Nav from './components/Nav/Nav';
 import ContactUs from './components/ContactUs/ContactUs';
 import './App.css';
 import MyWork from './components/MyWork/MyWork';
 import Review from './components/Reviews/Review';
-import firebase from 'firebase';
+
 import {
   BrowserRouter as Router,
   Switch,

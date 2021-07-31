@@ -84,15 +84,7 @@ class ContactUs extends React.Component{
                             <textarea onChange={this.onMessageChange} className="form-control form-control-sm"  rows="8"></textarea>
                         </div>
                         <div className='d-inline-flex  w-100' style={{marginTop:'3em', height:'5em'}}>
-                            <div className=' mx-2 w-50'>
-                                <button type="reset" value='reset' className="btn btn-block border btn-dark" 
-                                    onClick={()=>{
-                                        this.props.onRouteChange('home')
-                                        this.setState({messageResponse:''});
-                                    }}
-                                >Back</button>
-                            </div>
-                            <div  className='mx-2  w-50'>
+                            <div  className='mx-2'>
                                 <button onClick={()=>{
                                     this.onSubmitSend()                                    
                                     }} type="submit" value='send' className="btn btn-primary btn-block border">Submit</button>         
