@@ -3,27 +3,8 @@
   text-align: center; 
 }
 
-.bg{ 
-  background: linear-gradient(to right top, #00486f, #006d94, #0094b4, #00bccc, #0ae5db);
-}
-
-.pushback{
-  z-index: -1;
-}
-
 .pointer{
   cursor: pointer;
-}
-
-
-
-/*Background Component*/
-.wallpaper{
-  position:fixed;   
-  left:0;
-  top:0;     
-  width: 100vw;
-  height:100vh;    
 }
 
 .nav{
@@ -37,10 +18,10 @@
 
 /*Greeting Component*/
 .greeting{ 
-  margin-top: 25vh;
-  justify-content: center;
-  align-items:center;
-  padding: 50px 15px; 
+  margin-top: 0;
+  justify-content: center;  
+  padding: 50px 15px;
+  margin-top: 10vh; 
        
 }
 
@@ -52,7 +33,7 @@
   font-size: 2.8rem;
   letter-spacing: .25em;
   font-family:'Gayathri', sans-serif;
-  margin-top: 25vh;
+ 
 }
 
 .dcs_2{  
@@ -84,7 +65,7 @@
   }
 }
 
-#welcome{
+.grid-item{
   animation: rotate 3s 1;         
  }
 
@@ -104,14 +85,10 @@
  
 .grid-menu{ 
   display:flex;
-  flex-direction:column;  
-  position:fixed;
+  justify-content: center;  
   align-items: center;
-  top:5rem;
-  bottom:0;  
-  left:-5vw;
-  width: 25vw;
   height: 20em;
+  
 }
 
 .cell-container{  
@@ -125,9 +102,8 @@
 .cell{  
   border: solid 3px white;
   width: 10em;
-  height: 10em;
-  margin:1em;
-  padding: 1.5em;
+  height: 10em;  
+  padding: 1em;
   padding-top: 0;
   color: white;
   background-color: rgba(105, 105, 105, 0.363);
@@ -147,9 +123,7 @@
   border-radius: 1em;  
 }
 
-.inner-cell{
-  padding-top: 2em;
-}
+
 
 
 .back{
@@ -210,9 +184,7 @@
     display: flex;    
     padding:0;
     width:100%;
-    position:relative;
-    top: 0;
-    left:0;
+    position:relative;   
     transform: scale(.65);
      
   }
@@ -227,14 +199,14 @@
     font-size: 1.5em;     
   }
    .grid-menu{   
-    display:flex;
-    flex-direction:row;  
+    display:flex;     
     position:fixed;
     width: 100%;  
     padding:.25em;
     left:0em;
     top: 20em;
-    transform: scale(.65);
+    transform: scale(.5);    
+    margin-right: 25px;
   }
   .cell{      
     margin:1em;
@@ -243,7 +215,7 @@
     color: white;   
   }
   .inner-cell{
-    padding-top: 1em;
+    margin-top: -2em;
   }
   .grow{  
   transform:scale(2);
@@ -253,12 +225,8 @@
     font-size: 10px;
   }
   /*Contact Us*/
-  .contact-form{
-    position: fixed;
-    position:fixed;
-    left: 33vw;
-    top:10vh;
-    transform: scale(.75);
+  .contact-form{   
+    transform: scale(.65);
     padding: 2em;   
   }  
   /*Review*/
@@ -267,7 +235,8 @@
   height: 35vh;
   overflow-y: hidden;
   overflow-y: scroll;
-  width: 120vw;  
+  width: fit-content;
+  margin: .5em;  
 }
 .reviewInput{
   width:75vw;
