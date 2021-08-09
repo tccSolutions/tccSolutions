@@ -28,8 +28,8 @@ class WebProjects extends React.Component{
                                 </div>
 
                                 <div className='d-flex justify-content-center mt-0'>
-                                    <h6 className='w-75 row'>This is a site that was developed for a customer that wanted a
-                                    fun family friendly place to leave messages without the hassle and drama of FACEBOOK. 
+                                    <h6 className='w-75 row'>I developed this site to provide my daughter with a safe place to go online and talk with her friends without
+                                    the worries or hassles of Facebook. 
                                     <br></br>
                                     <br></br>
                                     ****DISCLAIMER this site is linked to a git hub page. If you would like to utilize this site for your family or friends please use the contact link.*******</h6>                                                                        
